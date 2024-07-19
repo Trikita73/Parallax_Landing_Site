@@ -7,4 +7,17 @@
 html, body {
     height: 100%;
     background-color: #2B474B;
+    color: #fff;
+}
+
+.slider {
+    height: 100%;
+
+}
+
+.slider__layer {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
 }
