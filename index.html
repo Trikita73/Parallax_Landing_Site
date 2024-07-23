@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax_Landing_Site</title>
 
+    <!-- link css and script js for button -->
+    <link rel="stylesheet" href="libs/btn/anim-menu-btn.css">
+    <script src="libs/btn/anim-menu-btn.min.js" defer></script>
+
     <!-- link css and script js for swiper -->
     <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
-    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/swiper/swiper-bundle.min.js" defer></script>
 
     <!-- link css-->
     <link rel="stylesheet" href="css/main.css">
@@ -33,14 +37,16 @@
                             <nav class="main-menu">
                                 <ul>
                                     <li><a href="#">Main</a></li>
-                                    <li class="active"><a href="#">Info</a></li>
+                                    <li class="active"><span>Info</span></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
                             </nav>
-                            <a href="#" class="button">Plant now</a>
+                            <a href="#" class="button button--top">Plant now</a>
                         </div>
                         <div class="col col--center">
-                            <button class="submenu">333</button>
+                            <button class="submenu anim-menu-btn">
+                                <i class="anim-menu-btn__icon anim-menu-btn__close"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
