@@ -15,3 +15,10 @@ document.querySelectorAll('.header-content h1').forEach(e => {
 		l.setAttribute('style', `z-index: -${ i }; transition-duration: ${ i/5 + 1 }s`)
 	})
 })
+
+/* JS for sliderItmes */
+swiper.on('slideChange', function() {
+	document.querySelectorAll('.header-content__slide').forEach(function(e, i) {
+		return swiper.activeIndex == i ? e.classList.add('active') : e.classList.remove('active')
+	})
+})

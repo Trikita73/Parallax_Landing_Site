@@ -34,3 +34,8 @@
     display: flex;
     justify-content: right;
 }
+
+.button--main {
+    margin-top: 3em;
+    padding: 1.6em 3.5em!important;
+}
