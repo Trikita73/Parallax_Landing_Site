@@ -36,6 +36,6 @@
 }
 
 .button--main {
-    margin-top: 3em;
+    margin-top: 3em!important;
     padding: 1.6em 3.5em!important;
 }

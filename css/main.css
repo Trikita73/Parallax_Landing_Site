@@ -135,7 +135,7 @@ body {
     visibility: visible;
 }
 
-.logo, .main-menu, .button {
+.logo, .main-menu, .button, .submenu {
     pointer-events: auto; /* кликабельность на touch devices */  
 }
 
