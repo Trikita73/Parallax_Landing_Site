@@ -22,3 +22,33 @@ swiper.on('slideChange', function() {
 		return swiper.activeIndex == i ? e.classList.add('active') : e.classList.remove('active')
 	})
 })
+
+/* JS for toggle_menu */
+document.addEventListener('DOMContentLoaded', function() {
+	const menuButton = document.querySelector('.anim-menu-btn');
+	const closeButton = document.querySelector('.close-menu');
+	const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+
+	if (!menuButton) {
+		console.error('Menu button not found');
+		return;
+	}
+
+	if (!closeButton) {
+		console.error('Close button not found');
+		return;
+	}
+
+	if (!mobileMenuOverlay) {
+		console.error('Mobile menu overlay not found');
+		return;
+	}
+
+	menuButton.addEventListener('click', function() {
+		mobileMenuOverlay.classList.toggle('show');
+	});
+
+	closeButton.addEventListener('click', function() {
+		mobileMenuOverlay.classList.remove('show');
+	});
+});

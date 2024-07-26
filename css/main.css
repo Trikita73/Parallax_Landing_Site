@@ -173,6 +173,14 @@ body {
     --anim-menu-btn-width: 1.08em;
 }
 
+.submenu {
+    --anim-menu-btn--state-b-color: var(--green-color);
+}
+
+.anim-menu-btn--state-b {
+    z-index: 100;
+}
+
 /* title */
 
 .header-wripper {
@@ -246,4 +254,100 @@ body {
 .header-content__slide:has(* + .active .header-content__info),
 .header-content__slide.active + * + .header-content__info {
     top: 18em;
+}
+
+/*styles for overlay and close button */
+
+.mobile-menu-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    z-index: 10;
+}
+
+.mobile-menu-overlay.show {
+    display: block;
+    background-color: var(--black-color);
+}
+
+.mobile-main-menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+}
+
+.mobile-main-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-main-menu li {
+    
+}
+
+.mobile-main-menu li {
+   
+}
+
+.button.button--bottom {
+    
+}
+
+.close-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* media mobile */
+
+@media all and (max-width: 889px) {
+    .main-menu li {
+        display: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+    
+}
+
+@media all and (max-width: 560px) {
+    .button--top {
+        display: none;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .logo img {
+        width: 11em;
+    }
+    i.anim-menu-btn__icon.anim-menu-btn__icon--close {
+        right: .2em;
+    }
+    .header-content h1 {
+        font-size: calc(var(--index) * 10.5);
+    }
+    .letters .letter {
+        right: calc(var(--index) * -1.25)
+    }
+}
+
+@media all and (max-width: 320px) {
+    i.anim-menu-btn__icon.anim-menu-btn__icon--close {
+        right: .5em;
+    }
 }
