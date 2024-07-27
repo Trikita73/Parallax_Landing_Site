@@ -281,7 +281,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 50%;
+    top: 35%;
 }
 
 .mobile-main-menu ul {
@@ -291,16 +291,70 @@ body {
     align-items: center;
 }
 
-.mobile-main-menu li {
-    
+.mobile-main-menu ul li {
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: .9em;
 }
 
-.mobile-main-menu li {
-   
+.mobile-main-menu ul li a {
+    text-decoration: none;
+    font-size: 1.01em;
+    font-weight: 700;
 }
 
-.button.button--bottom {
-    
+.mobile-main-menu ul li span {
+    font-size: 1.01em;
+    font-weight: 700;
+}
+
+
+.mobile-main-menu li > * {
+    color: var(--gray-color);
+    text-transform: uppercase;
+    transition: .4s ease;
+}
+
+.mobile-main-menu li > *:before,
+.mobile-main-menu li > *:after {
+    content: '';
+    display: inline-block;
+    transition: .2s ease;
+    height: 2px;
+    background-color: var(--green-color);
+    width: 11.25px;
+    vertical-align: middle;
+    top: -1px;
+    left: -1.5px;
+    position: relative;
+    border-radius: 10em;
+    margin: 0 7.25px;
+    visibility: hidden;
+}
+
+.mobile-main-menu li.active > *,
+.mobile-main-menu li:hover > * {
+    color: var(--white-color);
+    font-size: 1.01em;
+    font-weight: 700;
+}
+
+.mobile-main-menu li.active > *::before,
+.mobile-main-menu li:hover > *::before,
+.mobile-main-menu li.active > *::after,
+.mobile-main-menu li:hover > *::after {
+    visibility: visible;
+}
+
+.button.buttom--bottom {
+    display: block;
+    position: fixed;
+    top: 8%;
+    margin: 0 1.8em;
+}
+
+.mobile-main-menu, .button.buttom--bottom, .submenu {
+    pointer-events: auto; /* кликабельность на touch devices */  
 }
 
 .close-menu {
@@ -349,5 +403,11 @@ body {
 @media all and (max-width: 320px) {
     i.anim-menu-btn__icon.anim-menu-btn__icon--close {
         right: .5em;
+    }
+}
+
+@media all and (min-width: 889px) {
+    .anim-menu-btn {
+        display: none;
     }
 }
