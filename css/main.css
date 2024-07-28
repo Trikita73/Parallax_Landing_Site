@@ -346,11 +346,13 @@ body {
     visibility: visible;
 }
 
-.button.buttom--bottom {
-    display: block;
+a.button.buttom--bottom {
+    display: flex;
     position: fixed;
-    top: 8%;
-    margin: 0 1.8em;
+    top: 65%;
+    right: 41.5%;
+    align-items: center;
+    max-width: 15em;
 }
 
 .mobile-main-menu, .button.buttom--bottom, .submenu {
@@ -376,12 +378,17 @@ body {
 }
 
 @media all and (max-width: 768px) {
-    
+    a.button.buttom--bottom {
+        right: 39.5%;
+    }
 }
 
 @media all and (max-width: 560px) {
     .button--top {
         display: none;
+    }
+    a.button.buttom--bottom {
+        right: 35%;
     }
 }
 
@@ -398,11 +405,17 @@ body {
     .letters .letter {
         right: calc(var(--index) * -1.25)
     }
+    a.button.buttom--bottom {
+        right: 31%;
+    }
 }
 
 @media all and (max-width: 320px) {
     i.anim-menu-btn__icon.anim-menu-btn__icon--close {
         right: .5em;
+    }
+    a.button.buttom--bottom {
+        right: 27.5%;
     }
 }
 
