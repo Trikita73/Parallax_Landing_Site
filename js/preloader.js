@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Проверяем, загрузилось ли все ресурсы
 	window.addEventListener('load', function() {
 		// Время для правного перехода
-		setTimeout(hideLoader, 500000);
+		setTimeout(hideLoader, 500);
 	});
 
 	// Доп проверка DOM элементов
